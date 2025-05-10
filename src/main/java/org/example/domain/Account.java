@@ -43,7 +43,7 @@ public class Account {
             throw new IllegalStateException("Insufficient funds");
         }
         this.balance -= amount;
-        recordTransaction(-amount, TransactionType.WITHDRAWAL);//TODO: add transaction type here, instead of using negative amount
+        recordTransaction(-amount, TransactionType.WITHDRAWAL);
     }
 
     /**
